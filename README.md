@@ -2,7 +2,7 @@
 
 ## Project Title
 
-**GeoAI – Classification de l'Occupation du Sol**
+**Mini-projet 3 – Classification de zones urbaines selon leur densité**
 
 ## Group
 
@@ -16,12 +16,15 @@
 
 ## Description
 
-Ce projet porte sur la classification de l'occupation du sol à partir de données géographiques, en utilisant une approche basée sur l'Intelligence Artificielle. L'objectif est de distinguer différents types de zones telles que les zones forestières, urbaines, agricoles et les plans d'eau.
+Ce mini-projet porte sur la classification de la densité urbaine à partir de données géographiques, en utilisant une approche basée sur l'Intelligence Artificielle.
+
+**Jeu de données :** `geo_urban_density_data.csv`
 
 ## Project Structure
 
 - `projet1_geo_info.ipynb` - Main project notebook
-- `data/` - Project data files
+- `ai_.ipynb` - Preprocessing plan notebook
+- `data/` - Project data files (inclut `geo_urban_density_data.csv`)
 - `figures/` - Visualizations and results
 
 ## Requirements
@@ -47,7 +50,7 @@ Ce projet porte sur la classification de l'occupation du sol à partir de donné
 
 Open `projet1_geo_info.ipynb` in Jupyter Notebook and run the cells to:
 
-- Load and explore the geographic data
+- Load and explore the dataset
 - Preprocess and prepare the data
 - Train the classification model
 - Evaluate results and visualize classifications
