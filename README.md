@@ -14,18 +14,27 @@
 - Issa Zouak
 - Mohammed Belfellah
 
-## Description
+## Project Overview
 
-Ce mini-projet porte sur la classification de la densité urbaine à partir de données géographiques, en utilisant une approche basée sur l'Intelligence Artificielle.
+This project aims to classify urban zones by density using AI and geospatial data. The workflow includes:
 
-**Jeu de données :** `geo_urban_density_data.csv`
+- Data loading and inspection
+- Data cleaning, harmonization, and normalization
+- Outlier detection and handling
+- Encoding target variable
+- Train/Test split
+- Model training (Random Forest, SVM, XGBoost)
+- Performance evaluation and visualization
 
 ## Project Structure
 
-- `projet1_geo_info.ipynb` - Main project notebook
-- `ai_.ipynb` - Preprocessing plan notebook
-- `data/` - Project data files (inclut `geo_urban_density_data.csv`)
-- `figures/` - Visualizations and results
+- `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb` – Data preparation and normalization
+- `RandomForest_UrbanDensity_Classification.ipynb` – Random Forest model
+- `SVM_UrbanDensity_Classification.ipynb` – SVM model
+- `XGBoost_UrbanDensity_Classification.ipynb` – XGBoost model
+- `Module_Assignments_GeoAI.md` – Module assignments and member responsibilities
+- `data/` – Project data files (incl. `geo_urban_density_data.csv` and preprocessed version)
+- `figures/` – Visualizations and model results
 
 ## Requirements
 
@@ -39,25 +48,32 @@ Ce mini-projet porte sur la classification de la densité urbaine à partir de d
 - geopandas
 - folium
 - jupyter
+- xgboost
 
 ## Getting Started
 
 1. Clone the repository
-2. Install required dependencies: `pip install -r requirements.txt`
-3. Run the notebook to explore the classification model
+2. Install dependencies: `pip install -r requirements.txt`
+3. Open the notebooks in Jupyter and run the cells
 
 ## Usage
 
-Open `projet1_geo_info.ipynb` in Jupyter Notebook and run the cells to:
-
-- Load and explore the dataset
-- Preprocess and prepare the data
-- Train the classification model
-- Evaluate results and visualize classifications
+- Start with `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb` to prepare the data
+- Use the model notebooks to train and evaluate classifiers
+- Visualizations and results are saved in `figures/`
 
 ## Results
 
-Classified outputs and visualizations are saved in the `figures/` directory.
+- Models compare accuracy, F1-score, and confusion matrices
+- Feature importance and class distributions are visualized
+- Preprocessed dataset is saved as `data/geo_urban_density_data_preprocessed.csv`
+
+## Notes for the Professor
+
+- Each notebook is named to reflect its content and purpose
+- The workflow follows best practices for data science and geospatial AI
+- All steps are commented and visualized for clarity
+- Figures and reports are saved for review
 
 ## License
 
