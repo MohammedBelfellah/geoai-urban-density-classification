@@ -11,3 +11,4 @@ jupyter>=1.0.0
 ipykernel>=6.0.0
 notebook>=6.4.0
 Pillow>=9.0.0
+xgboost>=2.0.0

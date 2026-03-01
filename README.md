@@ -16,64 +16,57 @@
 
 ## Project Overview
 
-This project aims to classify urban zones by density using AI and geospatial data. The workflow includes:
+This project classifies urban zones by density using AI and geospatial data. The workflow includes:
 
 - Data loading and inspection
-- Data cleaning, harmonization, and normalization
-- Outlier detection and handling
-- Encoding target variable
+- Data cleaning and normalization
+- Feature/target preparation
 - Train/Test split
-- Model training (Random Forest, SVM, XGBoost)
+- Model training and tuning
 - Performance evaluation and visualization
 
 ## Project Structure
 
-- `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb` – Data preparation and normalization
-- `RandomForest_UrbanDensity_Classification.ipynb` – Random Forest model
-- `SVM_UrbanDensity_Classification.ipynb` – SVM model
-- `XGBoost_UrbanDensity_Classification.ipynb` – XGBoost model
-- `Module_Assignments_GeoAI.md` – Module assignments and member responsibilities
-- `data/` – Project data files (incl. `geo_urban_density_data.csv` and preprocessed version)
-- `figures/` – Visualizations and model results
+- `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb` – data preprocessing and normalization
+- `module_logistic_regression.ipynb` – logistic regression baseline
+- `module_knn.ipynb` – KNN classification module
+- `module_Random Forest.ipynb` – Random Forest classification module
+- `module_svm.ipynb` – SVM classification and tuning
+- `module_xgboost_classification.ipynb` – XGBoost classification and tuning
+- `data/geo_urban_density_data.csv` – raw dataset
+- `data/geo_urban_density_data_preprocessed.csv` – preprocessed dataset
+- `figures/` – generated figures and model outputs
+- `requirements.txt` – Python dependencies
 
 ## Requirements
 
 - Python 3.8+
-- pandas
-- numpy
-- scikit-learn
-- matplotlib
-- seaborn
-- rasterio
-- geopandas
-- folium
-- jupyter
-- xgboost
+- Install dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## Getting Started
 
-1. Clone the repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Open the notebooks in Jupyter and run the cells
+1. Clone/download this project.
+2. Create and activate a virtual environment (recommended).
+3. Install dependencies from `requirements.txt`.
+4. Open the notebooks in Jupyter or VS Code.
 
-## Usage
+## Suggested Execution Order
 
-- Start with `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb` to prepare the data
-- Use the model notebooks to train and evaluate classifiers
-- Visualizations and results are saved in `figures/`
+1. `GeoAI_UrbanDensity_Preprocessing_Normalization.ipynb`
+2. `module_logistic_regression.ipynb`
+3. `module_knn.ipynb`
+4. `module_Random Forest.ipynb`
+5. `module_svm.ipynb`
+6. `module_xgboost_classification.ipynb`
 
 ## Results
 
-- Models compare accuracy, F1-score, and confusion matrices
-- Feature importance and class distributions are visualized
-- Preprocessed dataset is saved as `data/geo_urban_density_data_preprocessed.csv`
-
-## Notes for the Professor
-
-- Each notebook is named to reflect its content and purpose
-- The workflow follows best practices for data science and geospatial AI
-- All steps are commented and visualized for clarity
-- Figures and reports are saved for review
+- Models are evaluated using Accuracy, F1-score, classification report, and confusion matrix.
+- Visual outputs are saved in the `figures/` directory.
 
 ## License
 
